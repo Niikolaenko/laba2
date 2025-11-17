@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота 2</title>
+
+  <style>
+    header {
+      background: #ffffffcc;
+      padding: 25px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      margin: 0 18px;
+      text-decoration: none;
+      color: #003399;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff9900;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .university-img {
+      float: left;
+      width: 330px;
+      margin: 10px 25px 15px 0;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    section {
+      padding: 45px 12%;
+      background: #fff;
+      margin-bottom: 40px;
+      border-radius: 18px;
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      background: linear-gradient(to right, #e8eefc, #f7faff);
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 40px 0;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    #contacts-panel {
+      position: fixed;
+      left: -240px;
+      top: 45%;
+      width: 240px;
+      background: #ffe29a;
+      border: 2px solid #000;
+      padding: 12px;
+      border-radius: 0 12px 12px 0;
+      transition: 0.4s;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #contact:target+#contacts-panel {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #contacts-panel:hover {
+      left: 0;
+    }
+
+    #contacts-tab {
+      position: absolute;
+      right: -48px;
+      top: 35%;
+      width: 48px;
+      padding: 12px 0;
+      background: #ffbb00;
+      border: 2px solid #000;
+      writing-mode: vertical-rl;
+      text-align: center;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .logo {
+      width: 100px;
+      margin: 10px auto;
+      display: block;
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 style="color:#002266;">Веб-розробка</h1>
+    <h1 style="color:#002266;">Лабораторна робота 2</h1>
+    <h1 style="color:#002266;">Харківський національний університет радіоелектроніки</h1>
+    <nav>
+      <a href="#home">Головна</a>
+      <a href="#about">Про нас</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Головна</h2>
+    <p><b>Харківський національний університет радіоелектроніки</b> - Заклад вищої освіти в Україні, IV рівня
+      акредитації,
+      у якому зосереджені практично усі спеціальності, пов'язані з інформаційними технологіями, радіотехнікою та
+      електронікою.</p>
+    <p><b>Адреса: </b></bdi>м. Харків, пр. Науки, 14</p>
+  </section>
+
+  <section id="about">
+    <h2>Про університет</h2>
+
+    <img class="university-img"
+      src="https://kharkov.info/sites/default/files/styles/original_vatermark/public/images/places/harkovskiy-nacionalnyy-universitet-radioelektroniki-hnure.jpg?itok=XAOcFnYD"
+      alt="Будівля університету">
+
+    <p>
+      <b>Харківський національний університет радіоелектроніки (ХНУРЕ)</b> - є одним з
+      профільних університетів України, в якому прикладним інформаційним
+      технологіям та інноваціям в інтересах сталого розвитку приділяється
+      основна увага. У ХНУРЕ найсучасніша матеріально-технічна база для
+      навчання і досліджень, в яких інженерні та інформаційні технології
+      можуть бути інтегровані з іншими дисциплінами.
+    </p>
+
+    <p>
+      Все, що ми робимо в ХНУРЕ, має три різні перспективи: інновації, стійкість
+      і реальність, що означає співробітництво й обмін з бізнесом, промисловістю,
+      суспільством.
+    </p>
+
+    <p>
+      <b>Візія ХНУРЕ:</b> Ми – сучасний науково-освітній хаб, що дає практичні
+      знання у співпраці з бізнесом.
+    </p>
+
+    <p>
+      <b>Місія ХНУРЕ:</b> Підготувати талановитих інженерів для успішної
+      цифрової трансформації України та світу.
+    </p>
+
+    <p><b>ХНУРЕ — перший серед кращих!</b></p>
+  </section>
+
+  <section id="contact">
+    <h2>Контакти</h2>
+    <p>Офіційний сайт: <a href="https://nure.ua/" target="_blank">https://nure.ua/</a></p>
+  </section>
+
+  <div id="contacts-panel">
+    <div id="contacts-tab">Contacts</div>
+
+    <img class="logo" src="https://ysc.nure.ua/wp-content/uploads/2023/05/Logo_nure.png" alt="Логотип університету">
+
+    <p><b>Сайт:</b><br>
+      <a href="https://nure.ua/" target="_blank">https://nure.ua/</a>
+    </p>
+  </div>
+
+</body>
+
+</html>

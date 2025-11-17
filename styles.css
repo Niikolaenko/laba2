@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+.highlight {
+    background: yellow;
+}
+
+#about {
+    border-left: 6px solid #7fa2ff;
+}
+
+#contact {
+    position: relative;
+    top: 10px;
+}
+
+footer {
+    float: right;
+    margin: 20px;
+}
