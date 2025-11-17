@@ -64,44 +64,37 @@
     }
 
     #contacts-panel {
-      position: fixed;
-      left: -240px;
-      top: 45%;
-      width: 240px;
-      background: #ffe29a;
-      border: 2px solid #000;
-      padding: 12px;
-      border-radius: 0 12px 12px 0;
-      transition: 0.4s;
-      z-index: 999;
-      opacity: 0;
-      pointer-events: none;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    }
+    position: fixed;
+    left: -240px;
+    top: 45%;
+    width: 240px;
+    background: #ffe29a;
+    border: 2px solid #000;
+    padding: 12px;
+    border-radius: 0 12px 12px 0;
+    transition: left 0.4s ease;
+    z-index: 999;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
 
-    #contact:target+#contacts-panel {
-      opacity: 1;
-      pointer-events: auto;
-    }
+#contacts-panel:hover {
+    left: 0;
+}
 
-    #contacts-panel:hover {
-      left: 0;
-    }
-
-    #contacts-tab {
-      position: absolute;
-      right: -48px;
-      top: 35%;
-      width: 48px;
-      padding: 12px 0;
-      background: #ffbb00;
-      border: 2px solid #000;
-      writing-mode: vertical-rl;
-      text-align: center;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 12px 12px 0 0;
-    }
+#contacts-tab {
+    position: absolute;
+    right: -48px;
+    top: 35%;
+    width: 48px;
+    padding: 12px 0;
+    background: #ffbb00;
+    border: 2px solid #000;
+    writing-mode: vertical-rl;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 12px 12px 0 0;
+}
 
     .logo {
       width: 100px;
